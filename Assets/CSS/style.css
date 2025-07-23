@@ -16,6 +16,28 @@ body {
     color: #747378;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    color: #000000;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 24px;
+    border-radius: 1000px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
 nav {
     width: 100vw;
     height: 60px;
@@ -153,5 +175,46 @@ nav {
 
 #services > img {
     width: 33%;
+    max-width: 33%;
     height: 100%;
+}
+
+#projects {
+    width: 100vw;
+    padding: 0px 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100vw;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.fotterInnner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 32px;
+    border-radius: 16px;
 }
