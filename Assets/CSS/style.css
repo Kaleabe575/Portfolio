@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    font-family: 'poppins', 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'poppins', 'Arial', sans-serif;
+    background-color: #F5F5F5;
+    color: #747378;
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo > a {
+    font-family: 'poppins', 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: middle;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1000px;
+    padding: 8px 12px;
+}
+
+.address > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1000px;
+}
+
+.address img {
+    width: 12px;
+    height: 12px;
+}
+
+.menu_icon {
+    width: 32px;
+    height: 32px;
+}
+
+#hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    background-image: url('../Images/hero\ section.png');
+    background-size: 110%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0 200px;
+    margin: 0;
+}
+
+.hello {
+    padding-right: 20px;
+    font-size: 210px;
+    font-weight: 700;
+    font-style: italic;
+    color: transparent;                     /* No fill */
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  mask-image: linear-gradient(to top, transparent 30%, white 80%);
+  -webkit-mask-image: linear-gradient(to top, transparent 30%, white 80%);
+}
+
+.hero_txt {
+    color: #ffffff;
+    margin-top: -120px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.hero_txt h1 {
+    font-size: 90px;
+    font-weight: 400;
+}
+
+.hero_txt p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -15px;
+}
