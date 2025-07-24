@@ -45,7 +45,8 @@ button {
     font-weight: 600;
     color: #000;
     text-transform: capitalize;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 button > span > img {
@@ -54,12 +55,94 @@ button > span > img {
 }
 
 button:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
 .btnSecondary {
     padding: 8px 20px;
     border: 2px solid #000;
+}
+
+.pills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 4px 16px;
+    border-radius: 1000px;
+    background-color: #ffffff;
+    color: #747378;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.pill > span > img {
+    width: 20px;
+    height: 20px;
+}
+
+.PillColored {
+    color: #fff;
+}
+
+.pillUixUx {
+    background-color: #6E2A69;
+}
+
+.pillGfx {
+    background-color: #1BB933;
+}
+
+.pillWp {
+    background-color: #177CD6;
+}
+
+.pillFigma {
+    background-color: #2D3039;
+}
+
+.pillXD {
+    background-color: #4D083E;
+}
+
+.pillPs {
+    background-color: #1C2D4C;
+}
+
+.pillIl {
+    background-color: #4A3114;
+}
+
+.pillAF {
+    background-color: #00005A;
+}
+
+.pillInd {
+    background-color: #4A142D;
+}
+
+.pillHtml {
+    background-color: #E4552D;
+}
+
+.pillCss {
+    background-color: #0770C3;
+}
+
+.pillJs {
+    background-color: #EFDB54;
+    color: #000;
 }
 
 nav {
@@ -136,6 +219,15 @@ nav {
     backdrop-filter: blur(10px);
 }
 
+section { 
+    width: 100vw;
+    padding: 0px 100px;
+    margin-top: 100px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
 #hero {
     width: 100vw;
     height: 95vh;
@@ -169,31 +261,27 @@ nav {
 .hero_txt {
     color: #ffffff;
     margin-top: -120px;
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     gap: 0px;
 }
 
 .hero_txt h1 {
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 400;
 }
 
 .hero_txt p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    margin-top: -15px;
+    margin-top: -10px;
 }
 
 #services {
-    width: 100vw;
-    padding: 0px 100px;
     margin-top: -50px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
     z-index: 20;
 }
@@ -205,13 +293,7 @@ nav {
 }
 
 #projects {
-    width: 100vw;
-    padding: 0px 100px;
-    margin-top: 100px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 32px;
 }
 
@@ -253,7 +335,6 @@ footer {
     justify-content: start;
     gap: 32px;
     flex-wrap: nowrap;
-    overflow: auto;
 }
 
 .projectCard {
@@ -267,6 +348,13 @@ footer {
     background-color: #EDEDED;
     border-radius: 32px;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) ;
 }
 
 .projectCardTop {
@@ -280,8 +368,9 @@ footer {
 }
 
 .projectTitle {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
     color: #000;
 }
 
@@ -289,43 +378,6 @@ footer {
     font-size: 14px;
     font-weight: 400;
     color: #747378;
-}
-
-.pills {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.pill {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 4px 16px;
-    border-radius: 1000px;
-    background-color: #ffffff;
-    color: #747378;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.pill > span > img {
-    width: 20px;
-    height: 20px;
-}
-
-.PillColored {
-    color: #fff;
-}
-
-.pillUixUx {
-    background-color: #6E2A69;
 }
 
 .projectImgCont {
@@ -339,6 +391,122 @@ footer {
 }
 
 .projectThumb {
+    width: auto;
+    height: 100%;
+}
+
+#about {
+    flex-direction: column;
+    gap: 32px;
+}
+
+.aboutBentoContainer {
     width: 100%;
-    height: auto%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 32px;
+}
+
+.bentoGridCol {
+    width: 50%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.bentoCard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 32px;
+    border-radius: 16px;
+    background: #EDEDED;
+}
+
+.bentoCard p {
+    font-size: 14px;
+}
+
+.BentoCard11 {
+    gap: 16px;
+    height: 100%;
+}
+
+.BentoCard12 {
+    gap: 32px;
+}
+
+.BentoCard21 {
+    gap: 24px;
+    height: 100%;
+}
+
+.BentoCard21 {
+    gap: 16px;
+    height: 100%;
+    position: relative;
+}
+
+.BentoCard21 > div  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: start;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 1000px;
+}
+
+#line {
+    width: 1px;
+    height: calc(100% - 64px);
+    position: absolute;
+    left: 35px;
+    background-color: #DAD7D7;
+    z-index: 10;
+}
+
+.BentoCard21 > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 20;
+}
+
+.BentoCard22 {
+    gap: 8px;
+    height: 100%;
+}
+
+.BentoCard22 > div {
+    gap: 8px;
+}
+
+.bentServiceCont {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 12px;
+}
+
+.bentoGridCol h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+
 }
