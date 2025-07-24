@@ -338,7 +338,7 @@ footer {
 }
 
 .projectCard {
-    width: 450px;
+    width: calc((100% - 64px) / 3);
     height: auto;
     display: flex;
     flex-direction: column;
@@ -369,7 +369,7 @@ footer {
 
 .projectTitle {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 20px;
     color: #000;
 }
@@ -417,6 +417,21 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 32px;
+}
+
+.bentServiceCont {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 12px;
+}
+
+.bentoGridCol h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+
 }
 
 .bentoCard {
@@ -494,19 +509,4 @@ footer {
 
 .BentoCard22 > div {
     gap: 8px;
-}
-
-.bentServiceCont {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    gap: 12px;
-}
-
-.bentoGridCol h3 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-
 }
