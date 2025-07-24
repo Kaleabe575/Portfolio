@@ -58,6 +58,7 @@ button:hover {
 }
 
 .btnSecondary {
+    padding: 8px 20px;
     border: 2px solid #000;
 }
 
@@ -132,6 +133,7 @@ nav {
     gap: 24px;
     padding: 16px 8px;
     border-radius: 12px 0px 0px 12px;
+    backdrop-filter: blur(10px);
 }
 
 #hero {
@@ -240,4 +242,103 @@ footer {
     background-color: #000;
     padding: 32px;
     border-radius: 16px;
+    color: #fff;
+}
+
+.projects_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 32px;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.projectCard {
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    background-color: #EDEDED;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.projectCardTop {
+    padding: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+}
+
+.projectTitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+}
+
+.projectDesc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #747378;
+}
+
+.pills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 4px 16px;
+    border-radius: 1000px;
+    background-color: #ffffff;
+    color: #747378;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pill > span > img {
+    width: 20px;
+    height: 20px;
+}
+
+.PillColored {
+    color: #fff;
+}
+
+.pillUixUx {
+    background-color: #6E2A69;
+}
+
+.projectImgCont {
+    width: 450px;
+    height: 340px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.projectThumb {
+    width: 100%;
+    height: auto%;
 }
