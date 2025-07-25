@@ -647,6 +647,19 @@ footer {
         padding: 60px 20px ;
         justify-content: space-between ;
     }
+    h2{
+        font-size: 20px;
+    }
+    button {
+        padding: 8px 22px;
+    }
+    .pill {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    .buttonsecondary {
+        padding: 4px 8px;
+    }
     .address {
         display: none ;
     }
@@ -683,10 +696,11 @@ footer {
         width: 95%;
     }
     .projectCardTop {
+        padding: 32px;
         gap: 8px;
     }
     .projectTitle {
-        font-size: 16px;
+        font-size: 14px;
     }
     .projectDesc {
         font-size: 12px;
