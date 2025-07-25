@@ -454,8 +454,12 @@ footer {
   display: none; /* Chrome, Safari */
 }
 
+.projectAnchor {
+    width: calc((95% - 66px) / 3);
+}
+
 .projectCard {
-    min-width: calc((95% - 66px) / 3);
+    min-width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
