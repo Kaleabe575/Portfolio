@@ -6,6 +6,7 @@
 }
 
 a {
+    display: inline;
     text-decoration: none;
     color: inherit;
 }
@@ -249,6 +250,33 @@ section {
     z-index: -1;
 }
 
+#heroSecondary {
+    width: 100vw;
+    height: 50vh;
+    background-color: #000;
+    background-image: url('../Images/hero\ section\ \(1\).webp');
+    background-size: 110%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 100px 0px 100px;
+    margin: 0;
+    z-index: -1;
+}
+
+#heroSecondary h1 {
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
 .hello {
     padding-right: 20px;
     font-size: 180px;
@@ -300,6 +328,11 @@ section {
     gap: 32px;
 }
 
+#projectsSecondary {
+    flex-direction: row;
+    gap: 32px;
+}
+
 .title {
     width: 100%;
     display: flex;
@@ -343,6 +376,78 @@ footer {
     overflow-x: scroll;
     scrollbar-width: none; /* Hide scrollbar in Firefox */
     -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+}
+
+.projects_containerSecondary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 32px;
+    align-items: start;
+    justify-content: start;
+}
+
+.projectsNavigation {
+    width: 30%;
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: start;
+    justify-content: start;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+
+#projectsSecondary > div {
+    width: calc(70% - 32px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 46px;
+}
+
+.projectsSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: start;
+    justify-content: start;
+    padding: 0px;
+}
+
+.projectSectionTitle {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: #000;
+}
+
+.projectsSection > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    gap: 32px;
+}
+
+.projectAnchorSecondary {
+    width: calc((100% - 32px) / 2);
+}
+
+.projectCardSecondary {
+    width: 100%;
 }
 
 .projects_container::-webkit-scrollbar {
