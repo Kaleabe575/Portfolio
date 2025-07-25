@@ -220,6 +220,7 @@ nav {
     padding: 16px 8px;
     border-radius: 12px 0px 0px 12px;
     backdrop-filter: blur(10px);
+    z-index: 100;
 }
 
 section { 
@@ -630,4 +631,88 @@ footer {
 
 .BentoCard22 > div {
     gap: 8px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    #hero {
+        background: #000;
+        background-image: none;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    nav {
+        padding: 60px 20px ;
+        justify-content: space-between ;
+    }
+    .address {
+        display: none ;
+    }
+    #hero, #heroSecondary {
+        background: #000;
+        background-image: none;
+        padding: 0 20px;
+    }
+    #hero {
+        height: auto ;
+        padding: 150px 20px 120px 30px;
+    }
+    .hello {
+        font-size: 90px;
+    }
+    .hero_txt{
+        margin-top: -40px;
+    }
+    .hero_txt h1 {
+        font-size: 28px;
+    }
+    .hero_txt p {
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    section {
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .projects_container {
+        gap: 16px;
+    }
+    .projectAnchor {
+        width: 95%;
+    }
+    .projectCardTop {
+        gap: 8px;
+    }
+    .projectTitle {
+        font-size: 16px;
+    }
+    .projectDesc {
+        font-size: 12px;
+    }
+    .projectImgCont {
+        align-items: start;
+        height: 200px;
+    }
+    .projectThumb {
+        width: 100%;
+        height: auto;
+    }
+    .aboutBentoContainer {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .bentoGridCol {
+        width: 100%;
+        gap: 16px;
+    }
+    footer {
+        padding: 20px;
+        margin-top: 0px;
+    }
+    .fotterInnner {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
