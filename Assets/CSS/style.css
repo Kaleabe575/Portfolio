@@ -308,6 +308,7 @@ section {
 footer {
     width: 100vw;
     padding: 50px 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
